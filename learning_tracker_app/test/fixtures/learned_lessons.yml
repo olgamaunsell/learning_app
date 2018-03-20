@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  blocker: MyText
+  resolution: MyText
+
+two:
+  description: MyString
+  blocker: MyText
+  resolution: MyText

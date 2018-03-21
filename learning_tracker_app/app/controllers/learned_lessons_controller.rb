@@ -1,11 +1,13 @@
 class LearnedLessonsController < ApplicationController
 
+
   def lesson_params
     params.require(:learned_lesson).permit([:description, :blocker, :resolution])
   end
 
   def index
-    @learned_lessons = LearnedLesson.all
+    # Get all lessons in descending order of creation
+    @learned_lessons = LearnedLesson.order("created_at DESC")
     render :json => @learned_lessons
     # if I add a method to learned_lesson model - use & update line below replacing
     # ':method' with the method name. same applies to show route aswell.

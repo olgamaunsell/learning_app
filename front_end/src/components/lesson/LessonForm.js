@@ -47,17 +47,24 @@ class LessonForm extends Component {
           type="text"
           placeholder="Enter the description"
           value={this.state.description}
-          onChange={this.handleDescriptionChange}/>
+          onChange={this.handleDescriptionChange}
+          size="100"/>
+          <br/>
         <input
           type="text"
           placeholder="Enter the blocker or error message.."
           value={this.state.blocker}
-          onChange={this.handleBlockerChange}/>
+          onChange={this.handleBlockerChange}
+          size="100"/>
+          <br/>
         <input
           type="text"
           placeholder="Enter the resolution.."
           value={this.state.resolution}
-          onChange={this.handleResolutionChange}/>
+          onChange={this.handleResolutionChange}
+          size="100"/>
+          <br/>
+          <br/>
         <input
           type="submit"
           value="Post lesson learned"/>
